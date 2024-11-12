@@ -1,0 +1,40 @@
+theme = "catppuccin_latte"
+
+[editor]
+
+line-number = "relative"
+mouse = false
+scrolloff = 12
+cursorline = true
+
+rulers = [80]
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+"'" = "'"
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 5000
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+F1 = ":set whitespace.render none"
+F2 = ":set whitespace.render all"
+[keys.insert]
+F1 = ":set whitespace.render none"
+F2 = ":set whitespace.render all"

@@ -1,0 +1,68 @@
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[[language]]
+name = "c"
+language-servers = ["clangd", "scls"]
+scope = "source.c"
+file-types = ["c", "h"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cpp"
+language-servers = ["clangd", "scls"]
+scope = "source.cpp"
+file-types = ["cpp", "ino", "hpp"]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[language-server.matlab-ls]
+command = "matlab-language-server"
+args = ["--stdio"]
+
+[language-server.matlab-ls.config.MATLAB]
+indexWorkspace = false
+installPath = "/PATH/TO/MATLAB/INSTALLATION"
+matlabConnectionTiming = "onStart"
+telemetry = false
+
+[[language]]
+name = "matlab"
+scope = "source.m"
+file-types = ["m"]
+language-servers = ["matlab-ls", "scls"]
+comment-token = "%"
+shebangs = ["octave-cli", "matlab"]
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "python"
+language-servers = ["pyright", "ruff", "scls"]
+scope = "source.py"
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[language-server.godot]
+command = "nc"
+args = ["127.0.0.1", "6007"] # check this in the godot editor settinsg>external
+
+[[language]]
+name = "gdscript"
+language-servers = ["godot", "scls"]
+
+
+[[language]]
+name = "markdown"
+language-servers = ["markdown-oxide", "scls"]
