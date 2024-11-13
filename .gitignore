@@ -10,6 +10,8 @@
 .snapshots/
 #Testing Output folder
 .output/
+#Treesitter Grammar Files
+runtime/
 #Extension App-file
 *.app
 #Rapid Application Development File
