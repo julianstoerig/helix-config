@@ -54,15 +54,6 @@ typeCheckingMode = "basic"
 command = "ruff"
 args = ["server"]
 
-[language-server.godot]
-command = "nc"
-args = ["127.0.0.1", "6007"] # check this in the godot editor settinsg>external
-
-[[language]]
-name = "gdscript"
-language-servers = ["godot", "scls"]
-
-
 [[language]]
 name = "markdown"
 language-servers = ["markdown-oxide", "scls"]
