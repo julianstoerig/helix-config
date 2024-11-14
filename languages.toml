@@ -22,24 +22,24 @@ command = "clippy"
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
-[language-server.matlab-ls]
-command = "matlab-language-server"
-args = ["--stdio"]
+# [language-server.matlab-ls]
+# command = "matlab-language-server"
+# args = ["--stdio"]
 
-[language-server.matlab-ls.config.MATLAB]
-indexWorkspace = false
-installPath = "/PATH/TO/MATLAB/INSTALLATION"
-matlabConnectionTiming = "onStart"
-telemetry = false
+# [language-server.matlab-ls.config.MATLAB]
+# indexWorkspace = false
+# installPath = "/PATH/TO/MATLAB/INSTALLATION"
+# matlabConnectionTiming = "onStart"
+# telemetry = false
 
-[[language]]
-name = "matlab"
-scope = "source.m"
-file-types = ["m"]
-language-servers = ["matlab-ls", "scls"]
-comment-token = "%"
-shebangs = ["octave-cli", "matlab"]
-indent = { tab-width = 2, unit = "  " }
+# [[language]]
+# name = "matlab"
+# scope = "source.m"
+# file-types = ["m"]
+# language-servers = ["matlab-ls", "scls"]
+# comment-token = "%"
+# shebangs = ["octave-cli", "matlab"]
+# indent = { tab-width = 2, unit = "  " }
 
 [[language]]
 name = "python"
