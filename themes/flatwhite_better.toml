@@ -1,0 +1,10 @@
+inherits = "flatwhite"
+main_bg = "#faf6f1"
+"ui.linenr" = { fg = "blue_text", bg = "base6" }
+"ui.linenr.selected" = { fg = "base6", bg = "base2" }
+"ui.background" = {fg = "main_bg"}
+"ui.virtual.jump-label" = { bg = "blue_bg", modifier = ["bold"] }
+
+"diagnostic.unnecessary" = { modifiers = ["underline"] }
+
+"comment" = { fg = "base2", modifiers = ["italic"]}
