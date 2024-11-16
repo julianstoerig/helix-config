@@ -14,7 +14,7 @@ hidden = false
 
 [editor.lsp]
 display-messages = true
-display-inlay-hints = true
+display-inlay-hints = false
 
 [editor.auto-pairs]
 '(' = ')'
@@ -35,6 +35,10 @@ enable = true
 [keys.normal]
 F1 = ":set whitespace.render none"
 F2 = ":set whitespace.render all"
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"
+
 [keys.insert]
 F1 = ":set whitespace.render none"
 F2 = ":set whitespace.render all"
