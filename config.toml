@@ -1,4 +1,5 @@
-theme = "flatwhite_better" # my personal tweak of flatwhite
+theme = "catppuccin_latte"
+# theme = "flatwhite_better" # my personal tweak of flatwhite
 
 [editor]
 bufferline = "always"
