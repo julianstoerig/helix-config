@@ -1,18 +1,18 @@
-[language-server.scls]
-command = "simple-completion-language-server"
+# [language-server.scls]
+# command = "simple-completion-language-server"
 
 [[language]]
 name = "c"
-language-servers = ["clangd", "scls"]
+language-servers = ["clangd"]
 scope = "source.c"
 file-types = ["c", "h"]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "cpp"
-language-servers = ["clangd", "scls"]
+language-servers = ["clangd"]
 scope = "source.cpp"
-file-types = ["cpp", "ino", "hpp"]
+file-types = ["cpp", "hpp"]
 indent = { tab-width = 4, unit = "    " }
 
 [language-server.rust-analyzer.config.check]
