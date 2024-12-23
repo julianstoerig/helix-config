@@ -7,14 +7,19 @@ line-number = "relative"
 mouse = false
 scrolloff = 12
 cursorline = true
-
 rulers = [80]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
 
 [editor.file-picker]
 hidden = false
 
 [editor.lsp]
 display-messages = true
+auto-signature-help = false
 display-inlay-hints = false
 
 [editor.auto-pairs]
@@ -37,8 +42,15 @@ enable = true
 F1 = ":set whitespace.render none"
 F2 = ":set whitespace.render all"
 
+A-x = "extend_to_line_bounds"
+X = "select_line_above"
+
 [keys.normal.space]
 i = ":toggle lsp.display-inlay-hints"
+
+[keys.select]
+A-x = "extend_to_line_bounds"
+X = "select_line_above"
 
 [keys.insert]
 F1 = ":set whitespace.render none"
