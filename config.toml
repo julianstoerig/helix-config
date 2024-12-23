@@ -43,3 +43,6 @@ i = ":toggle lsp.display-inlay-hints"
 [keys.insert]
 F1 = ":set whitespace.render none"
 F2 = ":set whitespace.render all"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
