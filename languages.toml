@@ -1,5 +1,8 @@
-# [language-server.scls]
-# command = "simple-completion-language-server"
+[[language]]
+name = "zig"
+language-servers = ["zls"]
+scope = "source.zig"
+file-types = ["zig", "zig.zon"]
 
 [[language]]
 name = "c"
@@ -36,25 +39,6 @@ command = "clippy"
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
-# [language-server.matlab-ls]
-# command = "matlab-language-server"
-# args = ["--stdio"]
-
-# [language-server.matlab-ls.config.MATLAB]
-# indexWorkspace = false
-# installPath = "/PATH/TO/MATLAB/INSTALLATION"
-# matlabConnectionTiming = "onStart"
-# telemetry = false
-
-# [[language]]
-# name = "matlab"
-# scope = "source.m"
-# file-types = ["m"]
-# language-servers = ["matlab-ls", "scls"]
-# comment-token = "%"
-# shebangs = ["octave-cli", "matlab"]
-# indent = { tab-width = 2, unit = "  " }
-
 [[language]]
 name = "python"
 language-servers = ["pyright", "ruff", "scls"]
@@ -71,3 +55,4 @@ args = ["server"]
 [[language]]
 name = "markdown"
 language-servers = ["markdown-oxide", "scls"]
+
