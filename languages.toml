@@ -1,19 +1,37 @@
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+max_completion_items = 100
+feature_words = true
+feature_snippets = true
+snippets_first = true
+snippets_inline_by_word_tail = false 
+feature_unicode_input = false
+feature_paths = false
+feature_citations = false
+
+[[language]]
+name = "lua"
+language-servers = ["scls"]
+file-types = ["lua"]
+
 [[language]]
 name = "zig"
-language-servers = ["zls"]
+language-servers = ["zls", "scls"]
 scope = "source.zig"
 file-types = ["zig", "zig.zon"]
 
 [[language]]
 name = "c"
-language-servers = ["clangd"]
+language-servers = ["clangd", "scls"]
 scope = "source.c"
 file-types = ["c", "h"]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "cpp"
-language-servers = ["clangd"]
+language-servers = ["clangd", "scls"]
 scope = "source.cpp"
 file-types = ["cpp", "hpp"]
 indent = { tab-width = 4, unit = "    " }
@@ -55,4 +73,13 @@ args = ["server"]
 [[language]]
 name = "markdown"
 language-servers = ["markdown-oxide", "scls"]
+
+[[language]]
+name = "stub"
+scope = "text.stub"
+file-types = []
+shebangs = []
+roots = []
+auto-format = false
+language-servers = [ "scls" ]
 

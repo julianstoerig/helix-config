@@ -1,4 +1,4 @@
-theme = "onelight"
+theme = "papercolor-light"
 # theme = "flatwhite_better" # my personal tweak of flatwhite
 
 [editor]
@@ -8,11 +8,13 @@ mouse = false
 scrolloff = 12
 cursorline = true
 rulers = [100]
+continue-comments = false
+auto-completion = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 [editor.file-picker]
 hidden = false
@@ -51,10 +53,20 @@ i = ":toggle lsp.display-inlay-hints"
 [keys.select]
 A-x = "extend_to_line_bounds"
 X = "select_line_above"
+A-v = "split_selection_on_newline"
 
 [keys.insert]
 F1 = ":set whitespace.render none"
 F2 = ":set whitespace.render all"
+
+up       = "no_op"
+down     = "no_op"
+left     = "no_op"
+right    = "no_op"
+pageup   = "no_op"
+pagedown = "no_op"
+home     = "no_op"
+end      = "no_op"
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-name"]
