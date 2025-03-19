@@ -15,12 +15,14 @@ feature_citations = false
 name = "lua"
 language-servers = ["scls"]
 file-types = ["lua"]
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "zig"
 language-servers = ["zls", "scls"]
 scope = "source.zig"
 file-types = ["zig", "zig.zon"]
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "c"
@@ -33,11 +35,12 @@ indent = { tab-width = 4, unit = "    " }
 name = "cpp"
 language-servers = ["clangd", "scls"]
 scope = "source.cpp"
-file-types = ["cpp", "hpp"]
+file-types = ["cpp", "hpp", "ino"]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "rust"
+indent = { tab-width = 4, unit = "    " }
 
 [language.debugger]
 name = "lldb-vscode"
@@ -56,6 +59,7 @@ command = "clippy"
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "python"
@@ -73,13 +77,15 @@ args = ["server"]
 [[language]]
 name = "markdown"
 language-servers = ["markdown-oxide", "scls"]
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "stub"
 scope = "text.stub"
-file-types = []
+file-types = ["txt", "todo", "md", ""]
 shebangs = []
 roots = []
 auto-format = false
 language-servers = [ "scls" ]
+indent = { tab-width = 4, unit = "    " }
 
