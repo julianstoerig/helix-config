@@ -39,6 +39,8 @@ after-delay.timeout = 5000
 
 [editor.soft-wrap]
 enable = true
+wrap-at-text-width = true
+wrap-indicator =""
 
 [keys.normal]
 F1 = ":set whitespace.render none"
