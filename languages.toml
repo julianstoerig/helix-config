@@ -96,4 +96,3 @@ roots = []
 auto-format = false
 language-servers = [ "scls" ]
 indent = { tab-width = 4, unit = "    " }
-
