@@ -79,6 +79,14 @@ name = "markdown"
 language-servers = ["markdown-oxide", "scls"]
 indent = { tab-width = 4, unit = "    " }
 
+[language-server.tinymist]
+command = "tinymist"
+
+[[language]]
+name = "typst"
+language-servers = ["tinymist"]
+
+
 [[language]]
 name = "stub"
 scope = "text.stub"
