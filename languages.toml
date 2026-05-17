@@ -90,7 +90,7 @@ language-servers = ["tinymist"]
 [[language]]
 name = "stub"
 scope = "text.stub"
-file-types = ["txt", "todo", "md", ""]
+file-types = ["txt", "todo", ""]
 shebangs = []
 roots = []
 auto-format = false
