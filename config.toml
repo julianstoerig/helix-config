@@ -1,5 +1,5 @@
-theme = "github_dark_high_contrast"
-# theme = "github_light" # my personal tweak of flatwhite
+# theme = "github_dark_high_contrast"
+theme = "github_light"
 
 [editor]
 bufferline = "always"
