@@ -96,3 +96,12 @@ roots = []
 auto-format = false
 language-servers = [ "scls" ]
 indent = { tab-width = 4, unit = "    " }
+
+[language-server.zk]
+command = "zk"
+args = ["lsp"]
+
+[[language]]
+name = "markdown"
+roots = [".zk"]
+language-servers = ["zk"]
